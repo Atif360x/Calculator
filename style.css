@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+  margin: 0px;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: #FBE4D8;
+}
+
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(223, 182, 178, 0.5);
+
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 280px;
+  height: 460px;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input {
+  background: #854F6C;
+  color:#FBE4D8;
+  font-family: "Jersey 10", sans-serif;
+  text-align: right;
+  font-size: 80px;
+  width: 260px;
+  height: 90px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 15px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: #DFB6B2;
+}
+
+
+.btns {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+  width: 260px;
+}
+
+.btn {
+  font-family: "Jersey 10", sans-serif;
+  border: none;
+  border-radius: 15px;
+  height: 70px;
+  width: 55px;
+  font-size: 25px;
+  background: #854F6C;
+  color: #FBE4D8;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.btnc{
+  background: #DFB6B2 !important;
+color: #190019 !important;
+}
